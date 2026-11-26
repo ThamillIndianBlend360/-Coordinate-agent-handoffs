@@ -1,0 +1,26 @@
+{
+  "id": "order-alerts",
+  "revision": "b72",
+  "contract": "alerts-schema-2",
+  "suite": "order-alerts-acceptance",
+  "environment": "isolated-test",
+  "required_acceptance": [
+    "one-alert-per-order",
+    "frontend-compatible"
+  ],
+  "required_tests": [
+    "duplicate_delivery",
+    "consumer_contract"
+  ],
+  "available_agents": [],
+  "grants": {
+    "backend-agent": {
+      "actions": [
+        "verify"
+      ],
+      "recipients": [
+        "frontend-agent"
+      ]
+    }
+  }
+}

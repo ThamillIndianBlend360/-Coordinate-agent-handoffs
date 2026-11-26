@@ -1,0 +1,13 @@
+{
+  "run-419": {
+    "revision": "b72",
+    "project": "order-alerts",
+    "contract": "alerts-schema-2",
+    "suite": "order-alerts-acceptance",
+    "environment": "isolated-test",
+    "tests": {
+      "duplicate_delivery": true,
+      "consumer_contract": true
+    }
+  }
+}

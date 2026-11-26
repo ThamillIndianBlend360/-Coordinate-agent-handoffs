@@ -1,0 +1,6 @@
+{
+  "principal": "backend-agent",
+  "projects": [
+    "order-alerts"
+  ]
+}

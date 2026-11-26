@@ -1,0 +1,17 @@
+{
+  "request_id": "older-141",
+  "task": "ORD-142",
+  "project": "order-alerts",
+  "sender": "backend-agent",
+  "recipient": "frontend-agent",
+  "action": "verify",
+  "revision": "b72",
+  "sequence": 1,
+  "contract": "alerts-schema-2",
+  "acceptance": [
+    "one-alert-per-order",
+    "frontend-compatible"
+  ],
+  "evidence_id": "run-419",
+  "expires_at": "2026-11-26T12:00:00Z"
+}

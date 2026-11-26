@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coordinate Agent Handoffs"
+  short_description: "Coordinate team handoffs and verify revision-specific evidence"
+  default_prompt: "Use $coordinate-agent-handoffs to prepare or verify a cross-team development handoff against project acceptance criteria."
