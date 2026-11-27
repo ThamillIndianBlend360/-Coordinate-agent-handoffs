@@ -34,13 +34,28 @@ cp -r skill .claude/skills/coordinate-agent-handoffs
 
 For other hosts, use their skill-loading mechanism. If a host has none, ask the agent to read `skill/SKILL.md` and follow its linked references.
 
+## What is in this repository
+
+You only need `skill/` to use it. The rest shows that it works and lets you change it safely.
+
+| Folder | Contents | Who needs it |
+| --- | --- | --- |
+| `skill/` | The skill: instructions, checker script, report template | Everyone using it |
+| `reference/` | The order-alert example, the demo, the 16 scenario fixtures, the tests and the evaluator | Anyone who wants to see it work, or who changes the checker |
+| `reference/agent-exercises/` | The agent test setup, pass criteria and recorded results | Anyone checking the claim that an agent followed it |
+| `docs/` | The integration guide and the validation record | Anyone connecting it to real tools |
+
+The tests check that the checker inside `skill/` is identical to the one in `reference/`, so the two cannot drift apart.
+
 ## Try the sample task
+
+This optional check confirms that your agent found the skill and follows it. The demo above only tests the Python checker. This task uses sample files only, so nothing real is touched, and the correct answer is known.
 
 Ask your agent:
 
 > Read skill/SKILL.md. Verify the handoff in reference/fixtures/stale using the receiver-controlled project, identity and evidence files in that folder. Use an isolated ledger and fixture time 2026-11-25T12:00:00Z. Report the observed mismatch, next owner, and retry condition.
 
-Expected result: `blocked`, because the delivered revision is b72 but the tests cover a19. See the [completed sample reports](skill/references/worked-example.md).
+Expected result: `blocked`, because the delivered revision is b72 but the tests cover a19. If your agent reaches that answer and names the next owner and retry condition, the skill is working. If it says `verified`, skips the checker, or cannot find the skill, fix the setup before using it on real work. See the [completed sample reports](skill/references/worked-example.md).
 
 ## Use it on your own project
 
