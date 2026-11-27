@@ -32,8 +32,8 @@ Provide approved requirements, producer and receiver owners, the artifact revisi
 
 Seven application tests exercise order-alert behavior. Sixteen controlled scenarios exercise the checker, with concurrent retry and recovery checks. Additional regression tests cover malformed inputs, CLI errors, ledger failures, and packaged checker consistency. Checker fixtures contain synthetic evidence snapshots. Application execution is measured separately.
 
-Agent behavior evaluation instructions are in [the evaluation protocol](skill/references/evaluation.md). A repeatable, recorded agent benchmark remains pending.
+Agent behavior evaluation instructions are in [the evaluation protocol](skill/references/evaluation.md). A first recorded run is in [reference/agent-exercises/](reference/agent-exercises/): seven exercises, one run each, all seven met their criteria. See its README for the limits.
 
 ## Repository publication
 
-The source is prepared for a Git repository. The owner must choose the remote repository, visibility, and reuse license before publication. The companion website's repository URL is configured in `assets/config.js` once the destination is available.
+The source lives in a Git repository. The companion website's repository URL and tested revision are set in `assets/config.js`.

@@ -57,5 +57,3 @@ The handoff catalog contains synthetic test outcomes. Application execution runs
 ## Maintain the publication
 
 The website lives in the sibling building-together-with-ai-agents folder. Set assets/config.js repositoryUrl to the chosen HTTPS repository and sourceRevision to the tested commit or release. Refresh evidence/results.json and assets/results.js together from reference/results.json after source changes and tests.
-
-Repository visibility and reuse license are owner decisions. Select both before publication.

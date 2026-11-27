@@ -19,4 +19,4 @@ Use a durable SQLite ledger dedicated to one project and receiving workflow. It 
 
 The CLI prints a JSON verdict. File-reading or JSON-decoding errors exit with status 2. Verification decisions, including blocked and changes_required, exit with status 0 for compatibility. Automation must inspect `verdict`. Save operational reports outside the acceptance ledger.
 
-The repository's `reference/fixtures/valid/` contains a complete four-file example. It uses an illustrative revision and a fixed clock. Actual work uses trusted current time and actual artifact identities.
+The repository's `reference/fixtures/valid/` contains a complete four-file example. It uses an illustrative revision and a fixed clock. Actual work uses trusted current time and actual artifact identities. The `expires_at` in `skill/assets/handoff.json` is an illustrative date that has already passed. Set a future expiry from team policy, or pass `--now` when reproducing fixtures.
